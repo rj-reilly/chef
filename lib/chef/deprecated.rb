@@ -195,6 +195,16 @@ class Chef
       target 19
     end
 
+    class CookbookInstallVendor < Base
+      def id
+        20
+      end
+
+      def target
+        "cookbook_install_vendor.html"
+      end
+    end
+
     class DeployResource < Base
       target 21
     end
@@ -210,8 +220,6 @@ class Chef
     class MapCollision < Base
       target 25
     end
-
-    # id 3694 was deleted
 
     # Returned when using the deprecated option on a property
     class Property < Base
@@ -229,6 +237,8 @@ class Chef
     class LocaleLcAll < Base
       target 27
     end
+
+    # id 3694 was deleted
 
     class Generic < Base
       def url
