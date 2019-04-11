@@ -1,6 +1,6 @@
 #
 # Author:: Daniel DeLeo (<dan@chef.io>)
-# Copyright:: Copyright 2010-2019, Chef Software, Inc.
+# Copyright:: Copyright 2010-2019, Chef Software Inc.
 # License:: Apache License, Version 2.0
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -85,6 +85,7 @@ require "chef/resource/osx_profile"
 require "chef/resource/python"
 require "chef/resource/reboot"
 require "chef/resource/registry_key"
+require "chef/resource/rekey"
 require "chef/resource/remote_directory"
 require "chef/resource/remote_file"
 require "chef/resource/rhsm_errata_level"
