@@ -195,13 +195,13 @@ class Chef
       target 19
     end
 
-    class CookbookInstallVendor < Base
+    class SupermarketInstallVendor < Base
       def id
         20
       end
 
       def target
-        "cookbook_install_vendor.html"
+        "supermarket_install_vendor.html"
       end
     end
 

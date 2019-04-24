@@ -84,7 +84,7 @@ class Chef
 
         # Deprecation warning for vendor installs.
         unless config[:no_vendor]
-          Chef.deprecated(:cookbook_install_vendor, "Using knife supermarket install with vendor branching is deprecated. " \
+          Chef.deprecated(:supermarket_install_vendor, "Using knife supermarket install with vendor branching is deprecated. " \
             "Please pass --no-vendor or add `knife[:no_vendor] = true` to your knife configuration.")
         end
 
