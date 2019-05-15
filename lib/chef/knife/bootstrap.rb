@@ -396,7 +396,7 @@ class Chef
       attr_reader :connection
 
       deps do
-        require "erubis"
+        require "erubis" unless defined?(Erubis)
 
         require_relative "../json_compat"
         require_relative "../util/path_helper"
@@ -615,7 +615,7 @@ class Chef
 
         raise e
       rescue Train::Error => e
-        require "net/ssh"
+        require "net/ssh" unless defined?(Net::SSH)
         if e.cause && e.cause.class == Net::SSH::AuthenticationFailed
           if connection.password_auth?
             raise
